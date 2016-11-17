@@ -1,0 +1,6 @@
+# Notify configuration file.
+notifySettings = {
+    'redisHost': "127.0.0.1", # Redis host.
+    'redisPort': 6379, # Redis port.
+    'redisQueue': ['notifyQ'], # List of notification queues.
+}
