@@ -1,8 +1,8 @@
 <?php
-# Auth tokens and their owners
-$validTokens = [
-    "SOMETOKEN" => "SOMEAPPNAME"
-];
+# Set option to make sure we're opened by notify.
+define('openedByNotifyServer', TRUE);
+# Open tokens file.
+require('tokens.php');
 
 # Response obect.
 $resp = [
