@@ -29,6 +29,9 @@ if (is_array($req) == true) {
             $resp['respCode'] = 200;
             $resp["respText"] = "OK";
             
+            # Add source IP address.
+            $req['reqSrcIP'] = $_SERVER['REMOTE_ADDR'];
+            
             # Add token name and pop token itself.
             $req['authName'] = $validTokens[$req['authToken']];
             unset($req['authToken']);
